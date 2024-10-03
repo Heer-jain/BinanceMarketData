@@ -1,8 +1,20 @@
-# React + Vite
+# Binance Market Data
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements a real-time candlestick chart for selected cryptocurrency pairs using Binance WebSocket API. The user can toggle between different cryptocurrencies and time intervals, and the chart updates accordingly. The data is also stored in `localStorage` for persistence.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time candlestick chart for ETH/USDT, BNB/USDT, and DOT/USDT.
+- Intervals of 1 minute, 3 minutes, and 5 minutes available for selection.
+- Data persistence using `localStorage`.
+- Fully responsive chart using `Chart.js` and `chartjs-chart-financial`.
+
+## Technologies Used
+
+- **React**: Frontend library for building the UI.
+- **Chart.js**: Used for rendering the candlestick chart.
+- **Binance WebSocket API**: Used to fetch live candlestick data for the selected cryptocurrency pair.
+- **Local Storage**: Persists candlestick data locally for each selected symbol and interval.
+- **Tailwind CSS**: Used for styling the UI.
+
+
